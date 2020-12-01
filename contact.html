@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="json.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body class="others">
+        <div class="together">
+            <div>
+              <a href="landing.html">
+                <img src="img/logo.png" alt="logo" id="logo"/>
+            </a>
+            </div>
+            <div>
+                <nav class="top-nav">
+                    <ul>
+                        <li>
+                            <a href="landing.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="bio.html">My Bio</a>
+                        </li>
+                        <li>
+                            <a href="project.html">Projects</a>
+                        </li>
+                        <li>
+                            <a href="resume.html">Resume</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="contactWrapper">
+            <div>
+                <p class="contact">Contact me</p>
+
+                <div class="container">
+                    <form onsubmit="return validate()" action="contact.html" name="contact_form">
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="name">Name</label>
+                      </div>
+                      <div class="col-75">
+                        <input aria-labelledby="input_name" type="text" id="name" name="yourname" placeholder="James Jia">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="gmail">Gmail</label>
+                      </div>
+                      <div class="col-75">
+                        <input aria-labelledby="input_gmail" type="text" id="gmail" name="yourgmail" placeholder="james@gmail.com">
+                      </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-25">
+                          <label for="role">Role</label>
+                        </div>
+                        <div class="col-together">
+                            <div>
+                                <input type="radio" id="stu" name="role" value="student" aria-labelledby="choice_role_student">
+                                <label class="special-white" for="stu">Student</label><br>
+                            </div>
+                            <div>
+                                <input type="radio" id="professional" name="role" value="prof" aria-labelledby="choice_role_prof">
+                                <label class="special-white" for="professional">Professional</label><br>
+                            </div>
+    
+                        </div>
+                      </div>
+    
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="country">Country</label>
+                      </div>
+                      <div class="col-75">
+                        <select id="country" name="country" aria-labelledby="choice_country>
+                            <option value="usa">USA</option>
+                            <option value="australia">Canada</option>
+                            <option value="canada">Others</option>
+                        </select>
+                      </div>
+                    </div>
+    
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="subject">Comments</label>
+                      </div>
+                      <div class="col-75">
+                        <textarea id="Content" name="subject" placeholder="Your comments here..." aria-labelledby="input_comment"></textarea>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <input type="submit" value="Submit" onclick="" aria-labelledby="botton_submit">
+                    </div>
+                    </form>
+                  </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="stickBottom">
+                <div class="contact-together">
+                    <a>
+                        <i id="contact-icon" class="material-icons">email</i>
+                    </a>
+                    <p class="contactInfo">jamesjia2022@u.northwestern.edu</p>
+                </div>
+
+                <div class="contact-together">
+                    <a>
+                        <i id="contact-icon" class="material-icons">voicemail</i>
+                    </a>
+                    <p class="contactInfo">+1 773 865 9823</p>
+                </div>
+
+                <div class="contact-together">
+                    <a>
+                        <i id="contact-icon" class="material-icons">place</i>
+                    </a>
+                    <p class="contactInfo">658 University Place, Evanston, IL, USA 60201</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
